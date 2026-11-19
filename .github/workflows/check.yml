@@ -1,6 +1,9 @@
 name: Check the live app
 
 on:
+  push:
+    branches: [main]
+    paths: ['.github/**']
   workflow_dispatch:
     inputs:
       mode:
@@ -20,12 +23,12 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install playwright && python -m playwright install --with-deps chromium
-      - run: python .github/check_app.py ${{ github.event.inputs.mode || 'wake' }}
+      - run: python .github/check_app.py ${{ github.event.inputs.mode || (github.event_name == 'push' && 'test') || 'wake' }}
       - name: Show page text
         if: always()
         run: for f in out/*.txt; do [ -f "$f" ] && { echo "===== $f"; cat "$f"; }; done; true
       - name: Save screenshots to the check-results branch
-        if: always() && github.event.inputs.mode == 'test'
+        if: always() && (github.event.inputs.mode == 'test' || github.event_name == 'push')
         run: |
           [ -d out ] || exit 0
           cd out && git init -q -b check-results && git add -A
