@@ -1,0 +1,45 @@
+Client Report
+
+Turns a week of messy production logs into a checked client report
+Demo · invented data
+For production companies and rights holders · tournament data is invented
+
+▶ Build the sample report
+
+▶ 1-min demo
+
+How it works
+
+expand_more
+FROM 5 MESSY LOG FILES
+Every fix, listed.
+Nothing guessed.
+TYPED IN THE LOG
+IN THE REPORT
+ACTION
+11.18 · 1330 · 13
+11:18 · 13:30 · 13:00
+FIXED
+R33
+R32
+FIXED
+Tenniss TV
+Tennis TV
+FIXED
+4.629 viewers
+4 629 viewers
+FIXED
+130 966 viewers
+20× the usual audience
+HELD BACK
+off air 19:12, on air 19:29
+impossible times
+FLAGGED
+Plus an internal Excel
+crew overtime for payroll, and a to-do list of every data problem
+keyboard_arrow_right
+
+Use my own logs, or the other sample
+
+Built by Jānis Saulītis with AI · report.py · 12 automated tests, including a file deliberately filled with mistakes
+See more tools
