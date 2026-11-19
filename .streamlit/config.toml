@@ -1,19 +1,7 @@
-[theme]
-font = "Roboto Slab:https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap, sans-serif"
-headingFont = "Roboto Slab:https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap, sans-serif"
-baseFontWeight = 500
-baseRadius = "0.3rem"
-buttonRadius = "0.3rem"
-showWidgetBorder = true
-
 [theme.light]
-primaryColor = "#C2412A"
-backgroundColor = "#F5EEDF"
-secondaryBackgroundColor = "#FFFDF7"
-textColor = "#1E1A16"
+primaryColor = "#1f9d6f"
+codeTextColor = "#8a5a00"
 
 [theme.dark]
-primaryColor = "#D94F30"
-backgroundColor = "#14110F"
-secondaryBackgroundColor = "#201B17"
-textColor = "#F2E8D5"
+primaryColor = "#2fb985"
+codeTextColor = "#f2c230"
